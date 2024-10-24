@@ -1,8 +1,18 @@
 AllCops:
-  TargetRubyVersion: 3.0
+  NewCops: enable
+  TargetRubyVersion: 3.3.5
 
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+Layout/IndentationStyle:
+  IndentationWidth: 1
+  EnforcedStyle: tabs
 
-Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes
+Layout/IndentationWidth:
+  Width: 1
+
+Layout/EndOfLine:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - "lib/Base64encoding.rb"
+    - "spec/Base64encoding_spec.rb"
