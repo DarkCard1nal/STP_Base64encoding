@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    Base64encoding (0.1.0)
+    Base64encoding (0.1.1)
 
 GEM
   remote: https://rubygems.org/

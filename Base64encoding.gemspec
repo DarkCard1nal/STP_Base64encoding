@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 	spec.summary = 'A gem for Base64 encoding and decoding.'
 	spec.description = 'This gem has the encode_base64 method that encodes UTF-8 strings to' \
 						'base64 (UTF-8) string, the decode_base64 method that decodes base64 string to UTF-8 string.'
-	spec.homepage = 'https://github.com/DarkCard1nal/STP_Base64encoding.git.'
+	spec.homepage = 'https://github.com/DarkCard1nal/STP_Base64encoding.git'
 	spec.required_ruby_version = '>= 3.3.5'
 
 	spec.metadata['homepage_uri'] = spec.homepage
