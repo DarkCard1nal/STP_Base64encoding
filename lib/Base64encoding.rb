@@ -7,6 +7,7 @@ require_relative 'Base64encoding/constants'
 module Base64encoding
 	class Error < StandardError; end
 
+	# The method encodes the input string in base64, returns the result in UTF-8
 	def self.encode_base64(input) # rubocop:disable Metrics/AbcSize
 		return '' if input.empty?
 
@@ -18,6 +19,7 @@ module Base64encoding
 		encoded.join + (Constants::COMPLEMENTARY_CHARACTER * padding)
 	end
 
+	# The method decodes the encoded string from base64, returns the result in UTF-8
 	def self.decode_base64(encoded)
 		return '' if encoded.empty?
 
