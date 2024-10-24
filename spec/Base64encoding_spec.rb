@@ -37,4 +37,11 @@ RSpec.describe Base64encoding do # rubocop:disable Metrics/BlockLength
 			expect(Base64encoding.decode_base64('')).to eq('')
 		end
 	end
+
+	describe '.encode_base64 and .decode_base64' do
+		it 'correctly encodes and decodes a random string' do
+			rstring = SecureRandom.alphanumeric(20).force_encoding('UTF-8')
+			expect(Base64encoding.decode_base64(Base64encoding.encode_base64(rstring))).to eq(rstring)
+		end
+	end
 end

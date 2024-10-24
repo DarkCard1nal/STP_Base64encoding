@@ -3,7 +3,7 @@
 require_relative 'Base64encoding/version'
 require_relative 'Base64encoding/constants'
 
-# module Base64encoding
+# module Base64encoding encodes and decodes base64 strings
 module Base64encoding
 	class Error < StandardError; end
 
